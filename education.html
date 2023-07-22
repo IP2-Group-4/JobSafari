@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="education.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="education.js"></script>
+    <title>Education</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+  </head>
+  <body>
+
+    <div class="nav">
+      <a  href="index.html">Home</a>
+      <span class="dropdown">
+          <a class="active" href="">Visualisation</a>
+              <div class="dropdown-content">
+                  <a href="demographics.html">Demographics</a>
+                  <a href="">Job Search</a>
+                  <a class="active" href="education.html">Education</a>
+                </div>
+      </span>
+      <a href="">Matching Pages</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+    </div>
+
+    <h1>Look up the best<br>universities in a country</h1>
+
+    <div class="searchform">
+      <div class="searchbar">
+        <input type="text" id="searchInput" placeholder="Enter a country">
+        <button onclick="searchUniversities()" id="submitBtn"><img src="search.png" alt=""></button>
+      </div>
+    </div>
+
+
+    <div id="result"></div>
+
+  </body>
+  
+</html>
