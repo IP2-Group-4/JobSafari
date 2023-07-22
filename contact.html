@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+   
+</head>
+<body>
+
+    <div class="nav">
+        <a  href="index1.html">Home</a>
+        <span class="dropdown">
+            <a href="faq.html">Visualisation</a>
+                <div class="dropdown-content">
+                    <a href="#">Demographics</a>
+                    <a href="#">Job Search</a>
+                    <a href="#">Education</a>
+                  </div>
+        </span>
+        <a href="contact.html">Mathing Pages</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a  href="about.html">About Us</a>
+    </div>
+
+    <h1>Reach out to us</h1>
+
+    <section class="contactwrapper">
+
+        <form action="" method="POST" class="contact">
+
+            <div class="field">
+                <input type="text" name="Fname" placeholder="First Name" required="">
+            </div>
+        
+            <div class="field">
+                <input type="text" name="Lname" placeholder="Last Name" required="">
+            </div>
+        
+            <div class="field">
+                <input type="text" name="email" placeholder="Email" required="">
+            </div>
+        
+            <div class="field">
+                <input type="text" name="subject" placeholder="Subject" required="">
+            </div>
+        
+            <div class="field">
+                <textarea name="message" rows="4" placeholder="Message" required=""></textarea>
+            </div>
+        
+            <div class="field">
+                <button type="submit" class="submit">Send</button>
+            </div>
+        
+        </form>
+        
+
+    </section>
+    
+</body>
+
+<script>
+    const form = document.querySelector(".contact")
+    const submitButton = document.querySelector(".submit")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzK3ZOHAGCdkGUzIZNW5iqKUGEXYBbFiiVBXX2IB1_GVNXUbVpjVG2NksoQxw7eSIU/exec'
+
+    form.addEventListener('submit', e => {
+        submitButton.disabled = true
+        e.preventDefault()
+        let requestBody = new FormData(form)
+        fetch(scriptURL, {
+            method: 'POST',
+            body: requestBody
+        })
+        .then(response => {
+            alert('Success!', response)
+            submitButton.disabled = false
+        })
+        .catch(error => {
+            alert('Error!', error.message)
+            submitButton.disabled = false
+
+        }
+        )
+    })
+    </script>
+
+</html>
