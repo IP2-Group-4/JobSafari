@@ -104,9 +104,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  aspect-ratio: 1/1;
+  aspect-ratio: 2;
   position: relative;
-  padding: 0.5rem;
   color: #ffffff;
   backface-visibility: hidden;
   text-decoration: none;
