@@ -279,6 +279,18 @@ p {
 
 .footer {
   background-color: #0F2435;
+  color: #ffffff;
   height: 50px;
   width: 100%;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
