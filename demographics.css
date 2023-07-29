@@ -101,8 +101,14 @@ body::-webkit-scrollbar{
 
 .search h1{
   color: rgb(255,147,24, 0.5);
-  font-size: 5vw;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  font-family: bitter;
+}
+
+.search h2{
+  font-size: 20px;
+  font-family: bitter;
+  padding-bottom: 10px;
 }
 
 .searchbar{
@@ -111,8 +117,8 @@ body::-webkit-scrollbar{
   display: flex;
   align-items: center;
   border: 1px solid #FF9318;
-  border-radius: 60px;
-  padding: 10px 20px;
+  border-radius: 40px;
+  padding: 10px;
 }
 
 .searchbar input{
@@ -120,7 +126,7 @@ body::-webkit-scrollbar{
   flex: 1;
   border: 0;
   outline: none;
-  padding: 24px 20px;
+  padding: 20px;
   font-size: 20px;
   color: #FF9318;
 }
@@ -155,6 +161,7 @@ body::-webkit-scrollbar{
   text-align: center;
   margin-top: 3%;
   font-size: 25px;
+  font-family: bitter;
 }
 
 .news-article{
@@ -163,4 +170,28 @@ body::-webkit-scrollbar{
 
 .livingcost{
   margin-top: 3%;
+}
+
+.footer {
+  background-color: #0F2435;
+  color: #ffffff;
+  height: 50px;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  text-align: center;
 }
