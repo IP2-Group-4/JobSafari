@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Search</title>
+</head>
+<body>
+  <h1>Job Search</h1>
+  
+  <form id="jobSearchForm">
+    <label for="countrySelect">Select Country:</label>
+    <select id="countrySelect" required>
+      <option value="">-- Select Country --</option>
+      <option value="au">Australia</option>
+      <option value="at">Austria</option>
+      <option value="be">Belgium</option>
+      <option value="br">Brazil</option>
+      <option value="ca">Canada</option>
+      <option value="fr">France</option>
+      <option value="de">Germany</option>
+      <option value="in">India</option>
+      <option value="it">Italy</option>
+      <option value="mx">Mexico</option>
+      <option value="nl">Netherlands</option>
+      <option value="nz">New Zealand</option>
+      <option value="pl">Poland</option>
+      <option value="ru">Russia</option>
+      <option value="sg">Singapore</option>
+      <option value="za">South Africa</option>
+      <option value="es">Spain</option>
+      <option value="ch">Switzerland</option>
+      <option value="gb">United Kingdom</option>
+      <option value="us">USA</option>
+    </select>
+    
+    <label for="jobInput">Enter Job:</label>
+    <input type="text" id="jobInput" required>
+    
+    <button type="submit">Search</button>
+  </form>
+  
+  <div id="jobResults">
+    <!-- Job data will be displayed here -->
+  </div>
+
+  <div id="loadMoreContainer" style="display: none;">
+    <button id="loadMoreBtn">Load More</button>
+  </div>
+  
+  <script>
+    // Function to fetch the list of countries for autocomplete
+    function fetchCountries() {
+      const apiUrl = "https://api.adzuna.com/v1/api/countries";
+      
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const countrySelect = document.getElementById("countrySelect");
+          
+          // Add country options to the select dropdown
+          data.countries.forEach(country => {
+            const option = document.createElement("option");
+            option.value = country.code;
+            option.textContent = country.name;
+            countrySelect.appendChild(option);
+          });
+        })
+        .catch(error => {
+          console.error("Error fetching countries data:", error);
+        });
+    }
+
+    // Function to fetch job data from the API and display it
+    function fetchJobData(country, job, page) {
+      const jobsPerPage = 5; // Number of jobs to display per page
+      const startIndex = (page - 1) * jobsPerPage;
+      const apiUrl = `https://api.adzuna.com/v1/api/jobs/${country}/search/${page}?app_id=e21e0eae&app_key=6961fcc6610bef298f086af6e90af991&content-type=application/json&results_per_page=${jobsPerPage}&what=${encodeURIComponent(job)}`;
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          // Process the data and display it on the page
+          const jobResultsDiv = document.getElementById("jobResults");
+          const jobListings = data.results;
+
+          // Clear previous results if it's the first page of search
+          if (page === 1) {
+            jobResultsDiv.innerHTML = "";
+          }
+
+          // Loop through the job listings and create HTML elements to display them
+          for (let i = 0; i < jobListings.length; i++) {
+            const jobListing = jobListings[i];
+            const jobTitle = jobListing.title;
+            const jobCompany = jobListing.company.display_name;
+            const jobLocation = jobListing.location.display_name;
+            const jobSalary = jobListing.salary_min;
+
+            const jobDiv = document.createElement("div");
+            jobDiv.innerHTML = `<h3>${jobTitle}</h3>
+                                <p>Company: ${jobCompany}</p>
+                                <p>Location: ${jobLocation}</p>
+                                <p>Salary: ${jobSalary}</p>
+                                <hr>`;
+
+            jobResultsDiv.appendChild(jobDiv);
+          }
+
+          // Show or hide the "Load More" button based on whether there are more job postings to display
+          const loadMoreContainer = document.getElementById("loadMoreContainer");
+          const loadMoreBtn = document.getElementById("loadMoreBtn");
+          loadMoreContainer.style.display = jobListings.length === jobsPerPage ? "block" : "none";
+        })
+        .catch(error => {
+          console.error("Error fetching job data:", error);
+        });
+    }
+
+    // Handle form submission
+    const jobSearchForm = document.getElementById("jobSearchForm");
+    jobSearchForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const countrySelect = document.getElementById("countrySelect");
+      const selectedCountry = countrySelect.value;
+      const jobInput = document.getElementById("jobInput");
+      const jobQuery = jobInput.value.trim();
+
+      // Reset current page to 1 when a new search is performed
+      currentPage = 1;
+
+      // Call the function to fetch and display job data for the first page
+      fetchJobData(selectedCountry, jobQuery, currentPage);
+
+      // Call the function to fetch top companies data and create the chart
+      fetchTopCompanies(selectedCountry, jobQuery);
+    });
+
+    // Handle "Load More" button click
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    let currentPage = 1;
+    loadMoreBtn.addEventListener("click", function() {
+      // Increment the current page and display the next page of job data
+      currentPage++;
+      const countrySelect = document.getElementById("countrySelect");
+      const selectedCountry = countrySelect.value.trim();
+      const jobInput = document.getElementById("jobInput");
+      const jobQuery = jobInput.value.trim();
+      fetchJobData(selectedCountry, jobQuery, currentPage);
+    });
+
+    // Fetch countries for dropdown when the page loads
+    fetchCountries();
+  </script>
+</body>
+</html>
+
+
+
+
+
