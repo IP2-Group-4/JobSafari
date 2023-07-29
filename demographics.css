@@ -56,12 +56,6 @@ body::-webkit-scrollbar{
     font-family: Bitter;
   }
 
-  .footer {
-    background-color: #0F2435;
-    height: 50px;
-    width: 100%;
-  }
-
   .dropdown {
     position: relative;
     display: inline-block;
