@@ -106,12 +106,6 @@ pre {
   font-family: Bitter;
 }
 
-.footer {
-  background-color: #0F2435;
-  height: 50px;
-  width: 100%;
-}
-
 h4 {
   text-align: center;
   font-size: 25px;
@@ -391,12 +385,6 @@ h5 {
   text-align: center;
 }
 
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
 .footer-links a:hover {
   text-decoration: underline;
 }
@@ -404,4 +392,10 @@ h5 {
 .footer-copyright {
   color: #ffffff;
   text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
 }
