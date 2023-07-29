@@ -226,7 +226,7 @@ p {
 
 .stats {
   background-color: #E0FFFF;
-  height: 200px;
+  height: 300px;
   width: 100%;
   border-radius: 5px;
 }
@@ -280,7 +280,8 @@ p {
 .footer {
   background-color: #0F2435;
   color: #ffffff;
-  height: 50px;
+  height: 150px;
+  padding: 20px 0;
   width: 100%;
   text-align: center;
 }
@@ -293,4 +294,8 @@ p {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #000000
 }
