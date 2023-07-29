@@ -58,6 +58,17 @@ body::-webkit-scrollbar {
   border-radius: 20px;
 }
 
+.intro1{
+width: 50%;
+float: left;
+}
+
+.intro2{
+  padding-top: 20px;
+  width: 50%;
+  float: right;
+}
+
 h1 {
   text-align: left;
   font-size: 30px;
