@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background-color: #E0FFFF;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+  }
+  
+  body::-webkit-scrollbar{
+      display: none;
+    }
+  
+    .nav {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px;
+      background-color: #E0FFFF;
+      text-align: center;
+      font-size: 20px;
+      font-family: Bitter;
+      background-color: white;
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+    
+    .nav a {
+      /*Aligns navigation items at the center and gives the border a color*/
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+      text-align: center;
+      padding: 10px 10px;
+      text-decoration: none;
+      border-right: 0.5px solid white;
+      border-radius: 10px;
+    }
+    
+    .nav a.active {
+      background-color: white;
+      color: #FF9318;
+    }
+    
+    .nav input[type=text] {
+      float: center;
+      padding: 10px;
+      border-radius: 20px;
+      border: 0.5px solid #FF9318;
+      font-size: 15px;
+      font-family: Bitter;
+    }
+  
+    .footer {
+      background-color: #0F2435;
+      height: 50px;
+      width: 100%;
+    }
+  
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: rgba(255, 207, 124, 0.5);}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+   h1{
+    color: rgb(255,147,24, 0.5);
+    font-size: 5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  
+  #country{
+    width: 20%;
+    background: rgb(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF9318;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+
+  #city{
+    width: 20%;
+    background: rgb(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF9318;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+
+  #jobKeyword{
+    width: 20%;
+    background: rgb(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF9318;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-right: 20px;
+  }
+
+  #jobbutton{
+    border: 0;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: rgb(255,147,24, 0.5);
+  }
+
+  button img{
+    width: 30px;
+  }
+
+   button img:hover{
+    cursor: pointer;
+  }
+
+  .search{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  #jobResults{
+    text-align: center;
+  }
+
+  #viewMoreContainer{
+    text-align: center;
+  }
+
+  .more{
+  border: 0;
+  border-radius: 10%;
+  width: 20%;
+  background: rgb(255,147,24, 0.5);
+  font-family: Bitter;
+  font-size: 20px;
+  }
+  
