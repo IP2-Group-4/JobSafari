@@ -59,13 +59,13 @@ body::-webkit-scrollbar {
 }
 
 .intro1{
-width: 50%;
+width: 65%;
 float: left;
 }
 
 .intro2{
   padding-top: 20px;
-  width: 50%;
+  width: 35%;
   float: right;
 }
 
@@ -85,10 +85,14 @@ h2 {
 }
 
 h3 {
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   font-family: Bitter;
   color: black;
+}
+
+.h3left{
+  text-align: left;
   padding-left: 20px;
 }
 
@@ -105,7 +109,6 @@ pre {
   font-size: 16px;
   font-family: Bitter;
   color: black;
-  padding-left: 20px;
 }
 
 p {
@@ -113,7 +116,7 @@ p {
   font-size: 14px;
   font-family: Bitter;
   color: black;
-  padding-left: 20px;
+  padding-left: 3%;
 }
 
 .overview {
@@ -141,7 +144,7 @@ p {
   background-color: white;
   border: 1px solid #5252FF;
   border-radius: 20px;
-  margin-left: 125px;
+  margin-left: 10%;
 }
 
 #box2 {
@@ -151,7 +154,7 @@ p {
   background-color: white;
   border: 1px solid #FF9318;
   border-radius: 20px;
-  margin-left: 125px;
+  margin-left: 10%;
 }
 
 #box3 {
@@ -161,7 +164,7 @@ p {
   background-color: white;
   border: 1px solid #E72AFF;
   border-radius: 20px;
-  margin-left: 125px;
+  margin-left: 10%;
 }
 
 #box4 {
@@ -171,7 +174,7 @@ p {
   height: 50px;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 125px;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
@@ -182,7 +185,7 @@ p {
   height: 50px;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 125px;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
@@ -193,7 +196,7 @@ p {
   height: 50px;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 125px;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
@@ -201,10 +204,10 @@ p {
   float: left;
   background-color: #FEF8E6;
   width: 20%;
-  height: 50px;
+  height: 20%;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 125px;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
@@ -212,10 +215,10 @@ p {
   background-color: #E7FAF3;
   float: left;
   width: 20%;
-  height: 50px;
+  height: 20%;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 125px;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
@@ -223,11 +226,25 @@ p {
   background-color: #ECF3FE;
   float: left;
   width: 20%;
-  height: 50px;
+  height: 20%;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 125px;
+  margin-left: 10%;
   margin-top: 10px;
+}
+
+#box7 {
+  display: inline-block;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 50px;
+  border: 1px solid none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-family: Bitter;
+  padding-left: 12%;
 }
 
 .preview {
@@ -245,20 +262,6 @@ p {
   height: 300px;
   width: 100%;
   border-radius: 5px;
-}
-
-#box7 {
-  display: inline-block;
-  background-color: none;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  height: 50px;
-  border: 1px solid none;
-  border-radius: 10px;
-  margin-top: 10px;
-  font-family: Bitter;
-  padding-left: 55px;
 }
 
 .dropdown {
@@ -316,3 +319,4 @@ p {
   color: #ffffff;
   text-align: center;
 }
+
