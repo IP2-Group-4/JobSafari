@@ -136,6 +136,10 @@ html{
   background: rgb(255,147,24, 0.5);
   }
 
+.more:hover{
+    background: rgba(251, 163, 63, 0.913);
+  }
+
   button img{
     width: 30px;
   }
