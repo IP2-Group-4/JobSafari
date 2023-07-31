@@ -360,7 +360,7 @@ let currentData = [];
   
     // Perform the API request here using the values selected by the user
     // Replace "{YOUR_APP_ID}" and "{YOUR_APP_KEY}" with your actual API credentials
-    const apiUrl = `https://api.adzuna.com:80/v1/api/jobs/${country.toLowerCase()}/search/1?app_id=e21e0eae&app_key=6961fcc6610bef298f086af6e90af991&results_per_page=20&what=${encodeURIComponent(jobKeyword)}&where=${encodeURIComponent(city)}&content-type=application/json`;
+    const apiUrl = `https://api.adzuna.com/v1/api/jobs/${country.toLowerCase()}/search/1?app_id=e21e0eae&app_key=6961fcc6610bef298f086af6e90af991&results_per_page=20&what=${encodeURIComponent(jobKeyword)}&where=${encodeURIComponent(city)}&content-type=application/json`;
   
     fetch(apiUrl)
       .then(response => {
