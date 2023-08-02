@@ -59,13 +59,13 @@ body::-webkit-scrollbar {
 }
 
 .intro1{
-width: 50%
+width: 45%
 float: left;
 }
 
 .intro2{
   padding-top: 20px;
-  width: 50%;
+  width: 55%;
   float: right;
 }
 
