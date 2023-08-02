@@ -165,12 +165,9 @@ html{
   padding: 20px 0;
   width: 100%;
   text-align: center;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 .footer-links a:hover {
@@ -180,4 +177,10 @@ html{
 .footer-copyright {
   color: #ffffff;
   text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
 }
