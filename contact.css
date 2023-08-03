@@ -1,191 +1,194 @@
 html{
-    height: 100%;
-    scroll-behavior: smooth;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body{
-  position: relative;
-  margin: 0;
-  padding-bottom: 5vw;
-  background-color: #E0FFFF;
-  overflow-x: hidden;
+position: relative;
+margin: 0;
+padding-bottom: 5vw;
+background-color: #E0FFFF;
+overflow-x: hidden;
 }
 
 body::-webkit-scrollbar{
-    display: none;
-  }
+  display: none;
+}
 
-  .nav {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    background-color: #E0FFFF;
-    text-align: center;
-    font-size: 20px;
-    font-family: Bitter;
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 20px;
-  }
-  
-  .nav a {
-    /*Aligns navigation items at the center and gives the border a color*/
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    border-right: 0.5px solid white;
-    border-radius: 10px;
-  }
-  
-  .nav a.active {
-    background-color: white;
-    color: #FF9318;
-  }
-  
-  .nav input[type=text] {
-    float: center;
-    padding: 10px;
-    border-radius: 20px;
-    border: 0.5px solid #FF9318;
-    font-size: 15px;
-    font-family: Bitter;
-  }
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: #E0FFFF;
+  text-align: center;
+  font-size: 20px;
+  font-family: Bitter;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: rgba(255, 207, 124, 0.5);}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+.nav a {
+  /*Aligns navigation items at the center and gives the border a color*/
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-right: 0.5px solid white;
+  border-radius: 10px;
+}
+
+.nav a.active {
+  background-color: white;
+  color: #FF9318;
+}
+
+.nav input[type=text] {
+  float: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0.5px solid #FF9318;
+  font-size: 15px;
+  font-family: Bitter;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgba(255, 207, 124, 0.5);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .contactwrapper{
+  margin-top: 3vw;
+} 
+
+.contact{
+  text-align: center;
+  font-family: bitter;
+}
+
+.field{
+  margin: 2vw;
+}
+
+.field input{
+  width: 50%;
+  height: 3vw;
+  padding: 1vw;
+  border: none;
+  background-color:rgba(255, 255, 255, 0.7);
+  color: #FF9318;
+  border: 1px solid #FF9318;
+  font-size: 1vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.field textarea{
+  width: 50%;
+  height: 5vw;
+  padding: 1vw;
+  border: none;
+  background-color:rgba(255, 255, 255, 0.7);
+  color: #FF9318;
+  border: 1px solid #FF9318;
+  font-size: 1vw;
+  font-family: bitter;
+}
+
+h1{
+  color:#FF9318;
+  font-size: 30px;
+  font-family: bitter;
+  font-weight: bolder;
+  margin-top: 5vw;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.submit{
+  border: none;
+  background-color: #FF9318;
+  color: whitesmoke;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1180px){
+
+  .nav{
+    font-size: 15px;
+  }
+
+  .submit{
     margin-top: 3vw;
-  } 
-  
-  .contact{
-    text-align: center;
-    font-family: bitter;
+    font-size: 4vw;
   }
-  
-  .field{
-    margin: 2vw;
+
+  h1{
+    font-size: 8vw;
   }
-  
+
   .field input{
-    width: 50%;
-    height: 3vw;
-    padding: 1vw;
+    height: 8vw;
+    padding: 4vw;
     border: none;
-    background-color:rgba(255, 255, 255, 0.7);
-    color: #FF9318;
-    border: 1px solid #FF9318;
-    font-size: 1vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
   }
   
   .field textarea{
-    width: 50%;
-    height: 5vw;
-    padding: 1vw;
-    border: none;
-    background-color:rgba(255, 255, 255, 0.7);
-    color: #FF9318;
-    border: 1px solid #FF9318;
-    font-size: 1vw;
-    font-family: bitter;
+    height: 14vw;
+    padding: 4vw;
+    font-size: 3vw;
   }
-  
-  h1{
-    color:#FF9318;
-    font-size: 30px;
-    font-family: bitter;
-    font-weight: bolder;
-    margin-top: 5vw;
-    text-align: center;
-    padding-left: 20px;
-  }
-  
-  .submit{
-    border: none;
-    background-color: #FF9318;
-    color: whitesmoke;
-    font-size: 30px;
-    border-radius: 10px;
-  }
-  
-  @media screen and (max-width: 1180px){
-  
-    .submit{
-      margin-top: 2vw;
-      font-size: 3vw;
-    }
-  
-    h1{
-      font-size: 5vw;
-    }
-  
-    .field input{
-      height: 5vw;
-      padding: 2vw;
-      border: none;
-      font-size: 1.5vw;
-    }
-    
-    .field textarea{
-      height: 9vw;
-      padding: 2vw;
-      font-size: 1.5vw;
-    }
-  }  
+}  
 
 .footer {
-  background-color: #0F2435;
-  color: #ffffff;
-  height: 50px;
-  padding: 20px 0;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
+background-color: #0F2435;
+color: #ffffff;
+height: 50px;
+padding: 20px 0;
+width: 100%;
+text-align: center;
+position: fixed;
+bottom: 0;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 .footer-copyright {
-  color: #ffffff;
-  text-align: center;
+color: #ffffff;
+text-align: center;
 }
 
 .footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
 }
