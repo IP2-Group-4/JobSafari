@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  margin-left: 0;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -116,6 +120,9 @@ p {
   font-size: 14px;
   font-family: Bitter;
   color: black;
+}
+
+.pad{
   padding-left: 3%;
 }
 
@@ -302,7 +309,19 @@ p {
   }
 
   p{
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .box1{
+    width: 25%;
+  }
+
+  .box2{
+    width: 25%;
+  }
+
+  .box3{
+    width: 25%;
   }
 
 }
@@ -324,7 +343,9 @@ p {
 
 .footer-copyright {
   color: #ffffff;
-  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-links a {
