@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="healthcare.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="healthcare.js"></script>
+    <title>Healthcare</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+  </head>
+  <body>
+
+    <div class="nav">
+      <a  href="index.html">Home</a>
+      <span class="dropdown">
+          <a class="active" href="">Visualisation</a>
+              <div class="dropdown-content">
+                  <a  href="demographics">Demographics</a>
+                  <a href="job.html">Job Search</a>
+                  <a href="education.html">Education</a>
+                  <a class="active" href="heathcare.html">Healthcare</a>
+                </div>
+      </span>
+
+      <span class="dropdown">
+      <a href="">Documentation</a>
+      <div class="dropdown-content">
+        <a href="docdemo.html">Demographics</a>
+        <a href="docjob.html">Job Search</a>
+        <a href="docedu.html">Education</a>
+        <a href="dochealth.html">Education</a>
+      </div>
+      </span>
+      
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+    </div>
+
+
+
+      <div class="search">
+        
+       <h1 class="search">Country Covid Status</h1>
+       <h2>Learn more about a country's Covid Status by entering its name below.</h2>
+
+       <div class="countrybar">
+
+        <input id="countryInput" required placeholder="Type a country name" type="text">
+        <button id="submitBtn" type="submit" onclick="getStatistics()"><img src="search.png"></button>
+
+       </div>
+
+      </div>
+
+      <div class="covidStatistics">
+        <h2>COVID-19 Statistics for <span id="countryName"></span></h2>
+        <ul>
+          <li>Total Cases: <span id="totalCases"></span></li><br>
+          <li>Total Deaths: <span id="totalDeaths"></span></li><br>
+          <li>Total Recovered: <span id="totalRecovered"></span></li><br>
+          <li>Active Cases: <span id="activeCases"></span></li>
+        </ul>
+      </div>
+
+      <div>
+        <pre>
+
+          
+        </pre>
+      </div>
+
+  </body>
+
+  <footer>
+  <div class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+      
+    <p class="footer-copyright">© 2023 Job Safari. All rights reserved.</p>
+  </div>
+</footer>
+</html>
