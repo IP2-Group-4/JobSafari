@@ -7,6 +7,7 @@ body{
   background-color: #E0FFFF;
   overflow-x: hidden;
   padding-bottom: 30px;
+  margin-left: 0;
 }
 
 body::-webkit-scrollbar{
@@ -82,12 +83,6 @@ body::-webkit-scrollbar{
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.searchform{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .search{
   text-align: center;
@@ -103,50 +98,51 @@ body::-webkit-scrollbar{
   font-size: 20px;
   font-family: bitter;
   padding-bottom: 10px;
-}
-
-.searchbar{
-  width: 50%;
-  background: rgb(255,255,255,0.4);
-  display: flex;
-  align-items: center;
-  border: 1px solid #FF9318;
-  border-radius: 40px;
-  padding: 10px;
-}
-
-.searchbar input{
-  background: transparent;
-  flex: 1;
-  border: 0;
-  outline: none;
-  padding: 20px;
-  font-size: 20px;
-  color: #FF9318;
+  text-align: center;
 }
 
 ::placeholder{
   color: rgb(255,147,24, 0.5);
 }
 
-.searchbar img{
+input{
+  color: #FF9318;
+}
+
+#countryName{
+  width: 30%;
+  height: 40px;
+  background: rgb(255,255,255,0.4);
+  border: 1px solid #FF9318;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+#submitBtn{
+border: 0;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+background: rgb(255,147,24, 0.5);
+}
+
+button img{
   width: 30px;
 }
 
-.searchbar button{
-  border: 0;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  background: rgb(255,147,24, 0.5);
-}
-
-.search button:hover{
+button img:hover{
   cursor: pointer;
 }
 
+.searchbar{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #countryImage {
-  max-width: 30%;
+  width: 30%;
   height: auto;
 }
 
@@ -190,4 +186,11 @@ body::-webkit-scrollbar{
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1180px) {
+  #countryImage{
+    width: 70%;
+  }
+
 }
