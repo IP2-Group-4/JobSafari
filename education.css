@@ -1,185 +1,172 @@
 html{
-    height: 100%;
-    scroll-behavior: smooth;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #E0FFFF;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+  margin-left: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
   }
-  
-  body{
-    background-color: #E0FFFF;
-    overflow-x: hidden;
-    padding-bottom: 30px;
-  }
-  
-  body::-webkit-scrollbar{
-      display: none;
-    }
-  
-    .nav {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 5px;
-      background-color: #E0FFFF;
-      text-align: center;
-      font-size: 20px;
-      font-family: Bitter;
-      background-color: white;
-      width: 80%;
-      margin: auto;
-      margin-top: 20px;
-      border-radius: 20px;
-    }
-    
-    .nav a {
-      /*Aligns navigation items at the center and gives the border a color*/
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      color: black;
-      text-align: center;
-      padding: 10px 10px;
-      text-decoration: none;
-      border-right: 0.5px solid white;
-      border-radius: 10px;
-    }
-    
-    .nav a.active {
-      background-color: white;
-      color: #FF9318;
-    }
-    
-    .nav input[type=text] {
-      float: center;
-      padding: 10px;
-      border-radius: 20px;
-      border: 0.5px solid #FF9318;
-      font-size: 15px;
-      font-family: Bitter;
-    }
-  
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-    
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .dropdown-content a:hover {background-color: rgba(255, 207, 124, 0.5);}
-    
-    .dropdown:hover .dropdown-content {display: block;}
-    
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  
-  .searchform{
+
+  .nav {
     width: 100%;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .search{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: #E0FFFF;
     text-align: center;
-  }
-  
-  .search h1{
-    color: rgb(255,147,24, 0.5);
-    font-size: 5vw;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .searchbar{
-    width: 50%;
-    background: rgb(255,255,255,0.4);
-    display: flex;
-    align-items: center;
-    border: 1px solid #FF9318;
-    border-radius: 60px;
-    padding: 10px 20px;
-  }
-  
-  .searchbar input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24px 20px;
     font-size: 20px;
+    font-family: Bitter;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  .nav a {
+    /*Aligns navigation items at the center and gives the border a color*/
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-right: 0.5px solid white;
+    border-radius: 10px;
+  }
+  
+  .nav a.active {
+    background-color: white;
     color: #FF9318;
   }
   
-  ::placeholder{
-    color: rgb(255,147,24, 0.5);
-  }
-  
-  .searchbar img{
-    width: 30px;
-  }
-  
-  .searchbar button{
-    border: 0;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    background: rgb(255,147,24, 0.5);
-  }
-  
-  .searchbar button:hover{
-    cursor: pointer;
+  .nav input[type=text] {
+    float: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid #FF9318;
+    font-size: 15px;
+    font-family: Bitter;
   }
 
-  #result{
-    text-align: center;
-  }
-
-  h1 {
-    color: rgb(255, 147, 24, 0.5);
-    font-size: 50px;
-    font-family: bitter;
-    text-align: center;
+  .dropdown {
+    position: relative;
+    display: inline-block;
   }
   
-  h2 {
-    font-size: 20px;
-    font-family: bitter;
-    padding-bottom: 10px;
-    text-align: center;
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgba(255, 207, 124, 0.5);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.search{
+  text-align: center;
+}
+
+.search h1{
+  color: rgb(255,147,24, 0.5);
+  font-size: 5vw;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::placeholder{
+  color: rgb(255,147,24, 0.5);
+}
+
+#searchInput{
+  width: 30%;
+  height: 40px;
+  background: rgb(255,255,255,0.4);
+  border: 1px solid #FF9318;
+  border-radius: 60px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+#submitBtn{
+border: 0;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+background: rgb(255,147,24, 0.5);
+}
+
+.searchbar{
+  text-align: center;
+}
+
+button img{
+  width: 30px;
+}
+
+button img:hover{
+  cursor: pointer;
+}
+
+#result{
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 147, 24, 0.5);
+  font-size: 50px;
+  font-family: bitter;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: bitter;
+  padding-bottom: 10px;
+  text-align: center;
+}
 
 .footer {
-  background-color: #0F2435;
-  color: #ffffff;
-  height: 50px;
-  padding: 20px 0;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
+background-color: #0F2435;
+color: #ffffff;
+height: 50px;
+padding: 20px 0;
+width: 100%;
+text-align: center;
+position: fixed;
+bottom: 0;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 .footer-copyright {
-  color: #ffffff;
-  text-align: center;
+color: #ffffff;
+text-align: center;
 }
 
 .footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
 }
