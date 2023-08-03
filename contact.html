@@ -37,6 +37,8 @@
 
     <section class="contactwrapper">
 
+        
+
         <form action="" method="POST" class="contact">
 
             <div class="field">
@@ -70,6 +72,18 @@
     
 </body>
 
+    <footer>
+  <div class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+      
+    <p class="footer-copyright">© 2023 Job Safari. All rights reserved.</p>
+  </div>
+</footer>
+
 <script>
     const form = document.querySelector(".contact")
     const submitButton = document.querySelector(".submit")
@@ -90,20 +104,12 @@
         .catch(error => {
             alert('Error!', error.message)
             submitButton.disabled = false
+
         }
         )
     })
     </script>
 
-    <footer>
-  <div class="footer">
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-      
-    <p class="footer-copyright">© 2023 Job Safari. All rights reserved.</p>
-  </div>
-</footer>
+
+
 </html>
