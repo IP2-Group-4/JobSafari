@@ -172,6 +172,7 @@ body::-webkit-scrollbar{
   width: 100%;
   text-align: center;
   bottom: 0;
+  position: fixed;
 }
 
 .footer-links a:hover {
