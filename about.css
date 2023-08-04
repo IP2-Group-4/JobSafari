@@ -390,6 +390,7 @@ h5 {
   text-align: center;
   position: fixed;
   bottom: 0;
+  z-index: 2;
 }
 
 .footer-links a:hover {
@@ -398,7 +399,7 @@ h5 {
 
 .footer-copyright {
   color: #ffffff;
-  text-align: center;
+  display: inline-block;
 }
 
 .footer-links a {
