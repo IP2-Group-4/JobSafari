@@ -48,7 +48,10 @@ body::-webkit-scrollbar{
     background-color: white;
     color: #FF9318;
   }
-  
+
+.nav a:hover{
+  font-size: 22px;
+}
   .nav input[type=text] {
     float: center;
     padding: 10px;
