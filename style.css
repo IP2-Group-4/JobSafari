@@ -26,10 +26,6 @@ body::-webkit-scrollbar {
   font-family: Bitter;
 }
 
-.nav a:hover{
-  font-size: 22px;
-}
-
 .nav a {
   /*Aligns navigation items at the center and gives the border a color*/
   display: inline-block;
@@ -46,6 +42,10 @@ body::-webkit-scrollbar {
 .nav a.active {
   background-color: white;
   color: #FF9318;
+}
+
+.nav a:hover{
+  font-size: 22px;
 }
 
 .nav input[type=text] {
