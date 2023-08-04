@@ -174,66 +174,33 @@ p {
 #box4 {
   float: left;
   background-color: #FEF8E6;
-  width: 20%;
-  height: 50px;
+  width: 15%;
+  height: 15%;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-top: 10px;
 }
 
 #box5 {
   background-color: #E7FAF3;
   float: left;
-  width: 20%;
-  height: 50px;
+  width: 15%;
+  height: 15%;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-top: 10px;
 }
 
 #box6 {
   background-color: #ECF3FE;
   float: left;
-  width: 20%;
-  height: 50px;
+  width: 15%;
+  height: 15%;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 10%;
-  margin-top: 10px;
-}
-
-#box4 {
-  float: left;
-  background-color: #FEF8E6;
-  width: 20%;
-  height: 20%;
-  border: 1px solid #E72AFF;
-  border-radius: 10px;
-  margin-left: 10%;
-  margin-top: 10px;
-}
-
-#box5 {
-  background-color: #E7FAF3;
-  float: left;
-  width: 20%;
-  height: 20%;
-  border: 1px solid #E72AFF;
-  border-radius: 10px;
-  margin-left: 10%;
-  margin-top: 10px;
-}
-
-#box6 {
-  background-color: #ECF3FE;
-  float: left;
-  width: 20%;
-  height: 20%;
-  border: 1px solid #E72AFF;
-  border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-top: 10px;
 }
 
@@ -324,6 +291,11 @@ p {
 
 }
 
+.pad{
+  padding-left: 3%;
+}
+
+
 .footer {
   background-color: #0F2435;
   color: #ffffff;
@@ -332,7 +304,6 @@ p {
   width: 100%;
   text-align: center;
   position: fixed;
-  left: 0;
   bottom: 0;
 }
 
