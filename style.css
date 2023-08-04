@@ -327,11 +327,12 @@ p {
 .footer {
   background-color: #0F2435;
   color: #ffffff;
-  height: 200px;
-  padding: 02px;
+  height: 50px;
+  padding: 20px 0;
   width: 100%;
   text-align: center;
-  position: relative;
+  position: fixed;
+  left: 0;
   bottom: 0;
 }
 
@@ -341,16 +342,7 @@ p {
 
 .footer-copyright {
   color: #ffffff;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-name {
-  color: #FF9318;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .footer-links a {
