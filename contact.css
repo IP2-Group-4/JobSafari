@@ -172,9 +172,8 @@ body::-webkit-scrollbar{
   width: 100%;
   text-align: center;
   position: fixed;
-  left: 0;
   bottom: 0;
- }
+}
 
 .footer-links a:hover {
   text-decoration: underline;
@@ -189,4 +188,4 @@ body::-webkit-scrollbar{
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
-} 
+}
