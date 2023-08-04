@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body{
   margin-left: 0;
 }
 
@@ -14,7 +14,6 @@ body::-webkit-scrollbar {
 
 .nav {
   width: 100%;
-  height: 350px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -25,6 +24,10 @@ body::-webkit-scrollbar {
   font-size: 20px;
   border-radius: 5px;
   font-family: Bitter;
+}
+
+.nav a:hover{
+  font-size: 22px;
 }
 
 .nav a {
@@ -63,12 +66,12 @@ body::-webkit-scrollbar {
   border-radius: 20px;
 }
 
-.intro1 {
-  width: 50%;
-  float: left;
+.intro1{
+width: 50%;
+float: left;
 }
 
-.intro2 {
+.intro2{
   padding-top: 20px;
   width: 50%;
   float: right;
@@ -96,7 +99,7 @@ h3 {
   color: black;
 }
 
-.h3left {
+.h3left{
   text-align: left;
   padding-left: 20px;
 }
@@ -123,9 +126,12 @@ p {
   color: black;
 }
 
+.pad{
+  padding-left: 3%;
+}
+
 .overview {
   background-color: white;
-  height: 400px;
   width: 100%;
   border-radius: 5px;
   text-align: center;
@@ -174,33 +180,66 @@ p {
 #box4 {
   float: left;
   background-color: #FEF8E6;
-  width: 15%;
-  height: 15%;
+  width: 20%;
+  height: 50px;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
 #box5 {
   background-color: #E7FAF3;
   float: left;
-  width: 15%;
-  height: 15%;
+  width: 20%;
+  height: 50px;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
 #box6 {
   background-color: #ECF3FE;
   float: left;
-  width: 15%;
-  height: 15%;
+  width: 20%;
+  height: 50px;
   border: 1px solid #E72AFF;
   border-radius: 10px;
-  margin-left: 15%;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+#box4 {
+  float: left;
+  background-color: #FEF8E6;
+  width: 20%;
+  height: 20%;
+  border: 1px solid #E72AFF;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+#box5 {
+  background-color: #E7FAF3;
+  float: left;
+  width: 20%;
+  height: 20%;
+  border: 1px solid #E72AFF;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+#box6 {
+  background-color: #ECF3FE;
+  float: left;
+  width: 20%;
+  height: 20%;
+  border: 1px solid #E72AFF;
+  border-radius: 10px;
+  margin-left: 10%;
   margin-top: 10px;
 }
 
@@ -220,7 +259,7 @@ p {
 
 .preview {
   background-color: white;
-  height: 400px;
+  height: 300px;
   width: 100%;
   border-radius: 5px;
   text-align: center;
@@ -245,7 +284,7 @@ p {
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
@@ -267,34 +306,29 @@ p {
   background-color: #3e8e41;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px){
 
-  h3 {
+  h3{
     font-size: 15px;
   }
 
-  p {
+  p{
     font-size: 12px;
   }
 
-  .box1 {
+  .box1{
     width: 25%;
   }
 
-  .box2 {
+  .box2{
     width: 25%;
   }
 
-  .box3 {
+  .box3{
     width: 25%;
   }
 
 }
-
-.pad{
-  padding-left: 3%;
-}
-
 
 .footer {
   background-color: #0F2435;
@@ -313,7 +347,9 @@ p {
 
 .footer-copyright {
   color: #ffffff;
-  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-links a {
