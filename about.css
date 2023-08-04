@@ -41,62 +41,8 @@ body::-webkit-scrollbar {
   color: #FF9318;
 }
 
-.nav input[type=text] {
-  float: center;
-  padding: 10px;
-  border-radius: 20px;
-  border: 0.5px solid #FF9318;
-  font-size: 15px;
-  font-family: Bitter;
-}
-
-h4 {
-  text-align: center;
-  font-size: 25px;
-  font-family: Bitter;
-  color: black;
-  padding-left: 20px;
-}
-
-pre {
-  text-align: center;
-  font-size: 16px;
-  font-family: Bitter;
-  color: black;
-  padding-left: 20px;
-}
-
-.nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  text-align: center;
-  font-size: 20px;
-  font-family: Bitter;
-  background-color: white;
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-
-.nav a {
-  /*Aligns navigation items at the center and gives the border a color*/
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  color: black;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  border-right: 0.5px solid white;
-  border-radius: 10px;
-}
-
-.nav a.active {
-  background-color: white;
-  color: #FF9318;
+.nav a:hover{
+  font-size: 22px;
 }
 
 .nav input[type=text] {
@@ -123,7 +69,6 @@ pre {
   color: black;
   padding-left: 20px;
 }
-
 
         /* Globals */
 .teamdetails {
